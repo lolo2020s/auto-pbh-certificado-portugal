@@ -45,7 +45,7 @@ const Index = () => {
               <div className="space-y-3">
                 <div>
                   <span className="font-semibold text-muted-foreground">Nome:</span>
-                  <p className="text-lg">Isilda Conde</p>
+                  <p className="text-lg">Isilda da Conceição Martins Conde</p>
                 </div>
                 <div>
                   <span className="font-semibold text-muted-foreground">Número do processo:</span>
@@ -53,7 +53,7 @@ const Index = () => {
                 </div>
                 <div>
                   <span className="font-semibold text-muted-foreground">Data de emissão:</span>
-                  <p>Segunda-feira, 21 de julho de 2025</p>
+                  <p>Segunda-feira, 22 de julho de 2025</p>
                 </div>
                 <div>
                   <span className="font-semibold text-muted-foreground">Estado do processo:</span>
@@ -133,18 +133,144 @@ const Index = () => {
         <Card>
           <CardHeader>
             <CardTitle>Verificação da Identidade da Cliente</CardTitle>
+            <p className="text-sm text-muted-foreground">Dados verificados através do Cartão de Cidadão Português</p>
           </CardHeader>
           <CardContent>
-            <div className="space-y-2">
-              <div>
-                <span className="font-semibold text-muted-foreground">Nome:</span>
-                <span className="ml-2">Isilda Conde</span>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <div>
+                  <span className="font-semibold text-muted-foreground">Nome completo:</span>
+                  <p className="text-lg">Isilda da Conceição Martins Conde</p>
+                </div>
+                <div>
+                  <span className="font-semibold text-muted-foreground">Número do Cartão de Cidadão:</span>
+                  <p className="font-mono text-eu-blue">04347921 9 ZY4</p>
+                </div>
+                <div>
+                  <span className="font-semibold text-muted-foreground">Data de nascimento:</span>
+                  <p>15 de agosto de 1950</p>
+                </div>
+                <div>
+                  <span className="font-semibold text-muted-foreground">Nacionalidade:</span>
+                  <p>Portuguesa (PRT)</p>
+                </div>
               </div>
-              <div>
-                <span className="font-semibold text-muted-foreground">Documento de identidade:</span>
-                <span className="ml-2 font-mono">04347921</span>
+              <div className="space-y-3">
+                <div>
+                  <span className="font-semibold text-muted-foreground">Validade do documento:</span>
+                  <p>06 de novembro de 2028</p>
+                </div>
+                <div>
+                  <span className="font-semibold text-muted-foreground">Estado de verificação:</span>
+                  <p className="flex items-center space-x-2 text-green-700">
+                    <CheckCircle className="w-4 h-4" />
+                    <span>Documento válido e verificado</span>
+                  </p>
+                </div>
+                <div>
+                  <span className="font-semibold text-muted-foreground">Data de verificação:</span>
+                  <p>22 de julho de 2025, 14:30 CET</p>
+                </div>
+                <div>
+                  <span className="font-semibold text-muted-foreground">Agente verificador:</span>
+                  <p className="text-sm text-muted-foreground">Sistema Europeu de Verificação Identity-Check EU</p>
+                </div>
               </div>
-              <p className="text-sm text-muted-foreground mt-2">(Outros dados não especificados)</p>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Nova seção: Conformidade regulamentar */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Conformidade Regulamentar</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <div>
+                  <span className="font-semibold text-muted-foreground">Regulamento aplicável:</span>
+                  <p>Diretiva 2007/46/CE (Homologação de veículos)</p>
+                </div>
+                <div>
+                  <span className="font-semibold text-muted-foreground">Código de classificação:</span>
+                  <p className="font-mono">EU-AUTO-M1-2018</p>
+                </div>
+                <div>
+                  <span className="font-semibold text-muted-foreground">Autoridade competente:</span>
+                  <p>RDW (Países Baixos)</p>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div>
+                  <span className="font-semibold text-muted-foreground">Certificado de conformidade:</span>
+                  <p className="text-green-700">Válido</p>
+                </div>
+                <div>
+                  <span className="font-semibold text-muted-foreground">Próxima inspeção obrigatória:</span>
+                  <p>Julho de 2027</p>
+                </div>
+                <div>
+                  <span className="font-semibold text-muted-foreground">Seguro de responsabilidade civil:</span>
+                  <p className="text-green-700">Incluído na garantia europeia</p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Suivi logistique */}
+        <Card>
+          <CardHeader>
+            <CardTitle>Suivi Logistique do Veículo</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between p-3 bg-green-50 dark:bg-green-950/20 rounded-lg border border-green-200 dark:border-green-800">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <div>
+                    <p className="font-medium">Inspeção técnica concluída</p>
+                    <p className="text-sm text-muted-foreground">20 de julho de 2025</p>
+                  </div>
+                </div>
+                <span className="text-green-600 font-semibold">100%</span>
+              </div>
+              
+              <div className="flex items-center justify-between p-3 bg-green-50 dark:bg-green-950/20 rounded-lg border border-green-200 dark:border-green-800">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <div>
+                    <p className="font-medium">Documentação administrativa verificada</p>
+                    <p className="text-sm text-muted-foreground">21 de julho de 2025</p>
+                  </div>
+                </div>
+                <span className="text-green-600 font-semibold">100%</span>
+              </div>
+              
+              <div className="flex items-center justify-between p-3 bg-green-50 dark:bg-green-950/20 rounded-lg border border-green-200 dark:border-green-800">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <div>
+                    <p className="font-medium">Certificado de conformidade emitido</p>
+                    <p className="text-sm text-muted-foreground">22 de julho de 2025</p>
+                  </div>
+                </div>
+                <span className="text-green-600 font-semibold">100%</span>
+              </div>
+              
+              <div className="flex items-center justify-between p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                <div className="flex items-center space-x-3">
+                  <div className="w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                  </div>
+                  <div>
+                    <p className="font-medium">Preparação para expedição</p>
+                    <p className="text-sm text-muted-foreground">Aguardando confirmação de pagamento</p>
+                  </div>
+                </div>
+                <span className="text-blue-600 font-semibold">Pendente</span>
+              </div>
             </div>
           </CardContent>
         </Card>

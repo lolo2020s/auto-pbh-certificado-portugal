@@ -136,44 +136,64 @@ const Index = () => {
             <p className="text-sm text-muted-foreground">Dados verificados através do Cartão de Cidadão Português</p>
           </CardHeader>
           <CardContent>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-3">
+            <div className="grid lg:grid-cols-3 gap-6">
+              {/* Imagem da carta d'identité */}
+              <div className="lg:col-span-1 space-y-3">
                 <div>
-                  <span className="font-semibold text-muted-foreground">Nome completo:</span>
-                  <p className="text-lg">Isilda da Conceição Martins Conde</p>
-                </div>
-                <div>
-                  <span className="font-semibold text-muted-foreground">Número do Cartão de Cidadão:</span>
-                  <p className="font-mono text-eu-blue">04347921 9 ZY4</p>
-                </div>
-                <div>
-                  <span className="font-semibold text-muted-foreground">Data de nascimento:</span>
-                  <p>15 de agosto de 1950</p>
-                </div>
-                <div>
-                  <span className="font-semibold text-muted-foreground">Nacionalidade:</span>
-                  <p>Portuguesa (PRT)</p>
-                </div>
-              </div>
-              <div className="space-y-3">
-                <div>
-                  <span className="font-semibold text-muted-foreground">Validade do documento:</span>
-                  <p>06 de novembro de 2028</p>
-                </div>
-                <div>
-                  <span className="font-semibold text-muted-foreground">Estado de verificação:</span>
-                  <p className="flex items-center space-x-2 text-green-700">
-                    <CheckCircle className="w-4 h-4" />
-                    <span>Documento válido e verificado</span>
+                  <span className="font-semibold text-muted-foreground block mb-2">Documento apresentado:</span>
+                  <div className="border rounded-lg overflow-hidden bg-white p-2">
+                    <img 
+                      src="/lovable-uploads/1812a91f-d804-4bb7-96b3-06325b1167c1.png" 
+                      alt="Cartão de Cidadão Português - Isilda da Conceição Martins Conde"
+                      className="w-full h-auto max-w-sm mx-auto rounded shadow-sm"
+                    />
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-2 text-center">
+                    Cartão de Cidadão Português - Documento oficial válido
                   </p>
                 </div>
-                <div>
-                  <span className="font-semibold text-muted-foreground">Data de verificação:</span>
-                  <p>22 de julho de 2025, 14:30 CET</p>
+              </div>
+
+              {/* Dados verificados */}
+              <div className="lg:col-span-2 grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <div>
+                    <span className="font-semibold text-muted-foreground">Nome completo:</span>
+                    <p className="text-lg">Isilda da Conceição Martins Conde</p>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-muted-foreground">Número do Cartão de Cidadão:</span>
+                    <p className="font-mono text-eu-blue">04347921 9 ZY4</p>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-muted-foreground">Data de nascimento:</span>
+                    <p>15 de agosto de 1950</p>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-muted-foreground">Nacionalidade:</span>
+                    <p>Portuguesa (PRT)</p>
+                  </div>
                 </div>
-                <div>
-                  <span className="font-semibold text-muted-foreground">Agente verificador:</span>
-                  <p className="text-sm text-muted-foreground">Sistema Europeu de Verificação Identity-Check EU</p>
+                <div className="space-y-3">
+                  <div>
+                    <span className="font-semibold text-muted-foreground">Validade do documento:</span>
+                    <p>06 de novembro de 2028</p>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-muted-foreground">Estado de verificação:</span>
+                    <p className="flex items-center space-x-2 text-green-700">
+                      <CheckCircle className="w-4 h-4" />
+                      <span>Documento válido e verificado</span>
+                    </p>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-muted-foreground">Data de verificação:</span>
+                    <p>22 de julho de 2025, 14:30 CET</p>
+                  </div>
+                  <div>
+                    <span className="font-semibold text-muted-foreground">Agente verificador:</span>
+                    <p className="text-sm text-muted-foreground">Sistema Europeu de Verificação Identity-Check EU</p>
+                  </div>
                 </div>
               </div>
             </div>
